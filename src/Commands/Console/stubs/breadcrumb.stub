@@ -1,0 +1,21 @@
+<?php
+
+Breadcrumbs::register('DummySeccion.DummyRoute.index', function ($breadcrumbs) {
+    $breadcrumbs->parent('DummySeccion.dashboard');
+    $breadcrumbs->push('DummyCapsRoute', route('DummySeccion.DummyRoute.index'));
+});
+
+Breadcrumbs::register('DummySeccion.DummyRoute.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('DummySeccion.dashboard');
+    $breadcrumbs->push('DummyCapsRoute', route('DummySeccion.DummyRoute.create'));
+});
+
+Breadcrumbs::register('DummySeccion.DummyRoute.show', function ($breadcrumbs) {
+    $breadcrumbs->parent('DummySeccion.dashboard');
+    $breadcrumbs->push(session()->get('title_DummyRoute'), route('DummySeccion.DummyRoute.show',\Route::current()->getParameter('DummyRoute')));
+});
+
+Breadcrumbs::register('DummySeccion.DummyRoute.edit', function ($breadcrumbs) {
+    $breadcrumbs->parent('DummySeccion.dashboard');
+    $breadcrumbs->push(session()->get('title_DummyRoute'), route('DummySeccion.DummyRoute.edit',\Route::current()->getParameter('DummyRoute')));
+});

@@ -1,0 +1,19 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Database\Eloquent\Model;
+
+use DummyNamespace\Attribute\DummyClassAttribute;
+use DummyNamespace\Relationship\DummyClassRelationship;
+use DummyNamespace\Scope\DummyClassScope;
+
+class DummyClass extends Model
+{
+    use DummyClassAttribute, DummyClassRelationship, DummyClassScope;
+
+    protected $table = 'DummyTable';
+
+    protected $fillable = [ DummyFields ];
+    //
+}

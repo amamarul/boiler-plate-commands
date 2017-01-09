@@ -1,0 +1,22 @@
+{
+  "name": "amamarul/boiler-plate-commands",
+  "type": "library",
+  "description": "Package to generate automatic cruds for Laravel BoilerPlate Apps",
+  "keywords": ["laravel","package","BoilerPlate"],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maru Amallo",
+      "email": "ama_marul@hotmail.com"
+    }
+  ],
+  "autoload":{
+    "psr-4": {
+      "Amamarul\\BoilerPlateCommands\\": "src/"
+    }
+  },
+  "config": {
+      "preferred-install": "dist"
+  }
+}

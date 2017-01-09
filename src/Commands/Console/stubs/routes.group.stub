@@ -1,0 +1,10 @@
+<?php
+
+/*
+ * DummyGrupo Routes
+ * Namespaces indicate folder structure
+ */
+Route::group(['namespace' => 'DummyGrupo', 'prefix' => 'DummyPrefixGrupo', 'as' => 'DummyPrefixGrupo.'], function () {
+
+    Route::resource('DummyRoute', 'DummyController');
+});

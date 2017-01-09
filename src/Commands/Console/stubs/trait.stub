@@ -1,0 +1,11 @@
+<?php
+
+namespace DummyNamespace;
+
+trait DummyClass
+{
+    // public function relationship()
+    // {
+    //   return $this->hasMany(Model::class);
+    // }
+}
