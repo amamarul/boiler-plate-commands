@@ -41,6 +41,7 @@ $ composer require amamarul/boiler-plate-commands
 ```
 
 ## Add the following to the AppServiceProvider in the register function:
+### app/Providers/AppServiceProvider.php
 ``` php
 /*
  * Load third party local providers
