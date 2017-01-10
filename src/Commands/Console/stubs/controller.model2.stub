@@ -43,7 +43,7 @@ class DummyClass extends Controller
         $title = 'DummyModelClass: Crear';
         session(['title_DummyModelVariable' => $title]);
 
-        return view('Amamarul::show', ['title' => $title,'data' => $data,'box_link' => $box_link]);
+        return view('Amamarul::show', ['title' => $title,'subtitle' => '','data' => $data,'box_link' => $box_link]);
     }
 
     /**
@@ -78,7 +78,7 @@ class DummyClass extends Controller
         ]);
         $title = 'DummyModelClass: '.$DummyModelVariable->name ? $DummyModelVariable->name : '';
         session(['title_DummyModelVariable' => $title]);
-        return view('Amamarul::show', ['title' => $title,'data' => $data,'box_link' => $box_link]);
+        return view('Amamarul::show', ['title' => $title,'subtitle' => '','data' => $data,'box_link' => $box_link]);
     }
 
     /**
@@ -106,7 +106,7 @@ class DummyClass extends Controller
         $title = 'DummyModelClass: '.$DummyModelVariable->name ? $DummyModelVariable->name : '';
         session(['title_DummyModelVariable' => $title]);
 
-        return view('Amamarul::show', ['title' => $title,'data' => $data,'box_link' => $box_link]);
+        return view('Amamarul::show', ['title' => $title,'subtitle' => '','data' => $data,'box_link' => $box_link]);
     }
 
     /**

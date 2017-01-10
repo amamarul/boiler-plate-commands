@@ -9,7 +9,7 @@
 @section('page-header')
     <h1>
         {!! $title !!}
-        <small>{{ $subtitle ? $subtitle : '' }}</small>
+        <small>{{ isset($subtitle) ? $subtitle : '' }}</small>
     </h1>
 @endsection
 

@@ -12,7 +12,7 @@ The amamarul:crud make:
     8 - Routes
     9 - Breadcrumbs
 
-## Install Boilerplate
+# Install Boilerplate
 
 ``` bash
 $ git clone https://github.com/rappasoft/laravel-5-boilerplate.git
@@ -25,16 +25,22 @@ $ cd laravel-5-boilerplate
 ``` bash
 $ composer install
 ```
-
-## Install Package (Laravel)
-
-# Via Composer
+## Duplicate .env.example and rename to .env
 
 ``` bash
-$ composer require amamarul/BoilerPlateCommands
+$ php artisan key:generate
+```
+# Set Database in .env
+
+# Install Package (Laravel)
+
+## Via Composer
+
+``` bash
+$ composer require amamarul/boiler-plate-commands
 ```
 
-# Add the following to the AppServiceProvider in the register function:
+## Add the following to the AppServiceProvider in the register function:
 ``` php
 /*
  * Load third party local providers
@@ -42,7 +48,7 @@ $ composer require amamarul/BoilerPlateCommands
 $this->app->register(\Amamarul\BoilerPlateCommands\Providers\BoilerPlateCommandsServiceProvider::class);
 ```
 
-# The register function must look like this
+## The register function must look like this
 ``` php
 public function register()
 {
@@ -73,15 +79,15 @@ public function register()
 }
 ```
 
-# Publish the views
+## Publish the views
 ``` bash
 $ php artisan vendor:publish --provider='Amamarul\BoilerPlateCommands\Providers\BoilerPlateCommandsServiceProvider'
 ```
-## Usage
+# Usage
 
 You need the tables migrated
 
-# create migration
+## create migration
 ``` bash
 $ php artisan make:migration create_products_table
 ```
@@ -119,11 +125,11 @@ class CreateProductsTable extends Migration
     }
 }
 ```
-# Migrate
+## Migrate
 ``` bash
 $ php artisan migrate
 ```
-## Make the Crud
+# Make the Crud
 Run the following commands
 **amamarul:crud {name} {tabla} {seccion} {grupo?}**
     * **name:** Is the Model Name
