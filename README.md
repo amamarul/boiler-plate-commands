@@ -30,7 +30,7 @@ $ composer install
 ``` bash
 $ php artisan key:generate
 ```
-# Set Database in .env
+## Set Database in .env
 
 # Install Package (Laravel)
 
@@ -48,7 +48,7 @@ $ composer require amamarul/boiler-plate-commands
 $this->app->register(\Amamarul\BoilerPlateCommands\Providers\BoilerPlateCommandsServiceProvider::class);
 ```
 
-## The register function must look like this
+## The register function should look like this
 ``` php
 public function register()
 {
