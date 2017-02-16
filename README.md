@@ -39,6 +39,11 @@ $ php artisan key:generate
 ``` bash
 $ composer require amamarul/boiler-plate-commands
 ```
+### Require Datatables Package
+
+``` bash
+$ composer require yajra/laravel-datatables-buttons:^1.1
+```
 
 ## Add the following to the AppServiceProvider in the register function:
 ### app/Providers/AppServiceProvider.php
