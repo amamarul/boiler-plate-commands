@@ -45,6 +45,16 @@ $ composer require amamarul/boiler-plate-commands
 $ composer require yajra/laravel-datatables-buttons:^1.1
 ```
 
+Service Provider
+``` php
+Yajra\Datatables\ButtonsServiceProvider::class
+```
+
+Configuration and Assets
+``` bash
+$ php artisan vendor:publish --tag=datatables-buttons
+```
+
 ## Add the following to the AppServiceProvider in the register function:
 ### app/Providers/AppServiceProvider.php
 ``` php
