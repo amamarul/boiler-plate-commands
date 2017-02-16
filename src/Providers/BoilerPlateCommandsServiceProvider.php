@@ -68,5 +68,11 @@ class BoilerPlateCommandsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands($this->commands);
+
+        /**
+         * Datatables
+         */
+        $this->app->register(\Yajra\Datatables\DatatablesServiceProvider::class);
+        $this->app->register(\Yajra\Datatables\ButtonsServiceProvider::class);
     }
 }

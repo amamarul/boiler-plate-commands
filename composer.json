@@ -11,6 +11,10 @@
       "email": "ama_marul@hotmail.com"
     }
   ],
+  "require": {
+      "yajra/laravel-datatables-buttons": "^1.1",
+      "yajra/laravel-datatables-oracle": "^7.0"
+  },
   "autoload":{
     "psr-4": {
       "Amamarul\\BoilerPlateCommands\\": "src/"
