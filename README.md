@@ -1,16 +1,16 @@
 # BoilerPlateCommands
-Package to generate automatic cruds for Laravel BoilerPlate Apps [Boilerplate]https://github.com/rappasoft/laravel-5-boilerplate
+Package to generate automatic cruds for Laravel BoilerPlate Apps [[Laravel 5 Boilerplate](https://github.com/rappasoft/laravel-5-boilerplate)]
 
-The amamarul:crud make:
-    1 - Model
-        2 - Model Trait Attribute
-        3 - Model Trait Relationship
-        4 - Model Trait Scope
-    5 - Form Request
-    6 - Controller
-        7 - Datatable as Service for Controller
-    8 - Routes
-    9 - Breadcrumbs
+The amamarul:crud make:  
+    1 - Model  
+        2 - Model Trait Attribute  
+        3 - Model Trait Relationship  
+        4 - Model Trait Scope  
+    5 - Form Request  
+    6 - Controller  
+        7 - Datatable as Service for Controller  
+    8 - Routes  
+    9 - Breadcrumbs  
 
 # Install Boilerplate
 
@@ -146,12 +146,12 @@ class CreateProductsTable extends Migration
 $ php artisan migrate
 ```
 # Make the Crud
-Run the following commands
-**amamarul:crud {name} {tabla} {seccion} {grupo?}**
-    * **name:** Is the Model Name
-    * **tabla:** Is the table name
-    * **seccion:** can be 'Backend', 'Frontend' or the section you want
-    * **grupo:** if you want to group different Models and Controllers like sub sections. **this is optional**
+Run the following commands  
+**amamarul:crud {name} {tabla} {seccion} {grupo?}**  
+    * **name:** Is the Model Name  
+    * **tabla:** Is the table name  
+    * **seccion:** can be 'Backend', 'Frontend' or the section you want  
+    * **grupo:** if you want to group different Models and Controllers like sub sections. **this is optional**  
 
 **This is an example for Backend and the group 'Products'. Then you can to add another model/controller in that group**
 ``` bash
@@ -179,14 +179,14 @@ Go to app/Http/Controllers/Backend/Products/DataTables/ProductDataTable.php and 
 
 ## Contributing
 
-Contributions are **welcome** and will be fully **credited**.
+Contributions are **welcome** and will be fully **credited**.  
 
-I accept contributions via Pull Requests
+I accept contributions via Pull Requests  
 
 ## Credits
 
-- [Maru][link-author]
-- [All Contributors][link-contributors]
+- [Maru](https://github.com/amamarul)
+- [All Contributors](https://github.com/amamarul/boiler-plate-commands/graphs/contributors)
 
 ## License
 
